@@ -120,8 +120,8 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "baseHref": "https://www.rosalianightsong.com/",
-            "cname": "www.rosalianightsong.com",
+            "baseHref": "https://www.beccalia.com/",
+            "cname": "www.beccalia.com",
             "name": "Nicholas Carrigan",
             "email": "ncharrigan@gmail.com"
           }
