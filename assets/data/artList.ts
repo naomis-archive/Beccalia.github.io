@@ -42,4 +42,10 @@ export const artList: ArtInt[] = [
     artist: 'claudoodles',
     artistUrl: 'https://twitter.com/claudoodles_',
   },
+  {
+    fileName: 'wedding-day.png',
+    artName: 'Wedding Day',
+    artist: 'Starfazers',
+    artistUrl: 'https://starfazers.art/',
+  },
 ];
