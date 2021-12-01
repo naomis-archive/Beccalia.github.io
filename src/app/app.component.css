@@ -2,3 +2,14 @@ main {
   background-color: rgba(0, 0, 0, 0.8);
   margin-top: 110px;
 }
+
+p, div, h1, h2 {
+  background: linear-gradient(to right, var(--purple), var(--green));
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+p {
+  font-size: 1.5rem;
+}
