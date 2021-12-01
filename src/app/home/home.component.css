@@ -1,7 +1,0 @@
-p {
-  color: #aea8d3;
-}
-
-p:nth-of-type(2n) {
-  color: inherit;
-}

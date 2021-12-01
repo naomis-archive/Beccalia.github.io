@@ -1,9 +1,6 @@
-main p {
-  font-size: 16px;
-}
-
-body {
-  color: #90ee90;
+:root {
+  --purple: #aea8d3;
+  --green: #90ee90;
 }
 
 main {
@@ -15,6 +12,7 @@ body::before {
   content: "";
   background: url(./assets/Moonlight.png);
   background-size: cover;
+  background-position: center top;
   opacity: 0.9;
   top: 0;
   left: 0;
@@ -46,10 +44,13 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid var(--scrollbarBG);
 }
 
-a {
-  color: inherit;
+a:not(.itch):not(.steam) {
   position: relative;
   font-weight: bold;
+  background: linear-gradient(to right, var(--purple), var(--green));
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 a:hover {
@@ -65,4 +66,15 @@ ul {
 
 li {
   margin-bottom: 10px;
+}
+
+p, h1, h2 {
+  background: linear-gradient(to right, var(--purple), var(--green));
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+p {
+  font-size: 1.5rem;
 }
