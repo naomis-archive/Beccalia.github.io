@@ -10,6 +10,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { GamesComponent } from './games/games.component';
 import { Router } from '@angular/router';
 import { FooterComponent } from './footer/footer.component';
+import { SafeurlPipe } from './safeurl.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     GalleryComponent,
     GamesComponent,
-    FooterComponent
+    FooterComponent,
+    SafeurlPipe
   ],
   imports: [
     BrowserModule,

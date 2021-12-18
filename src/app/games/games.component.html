@@ -1,8 +1,14 @@
 <h1>Games!</h1>
 <div *ngFor="let game of gameList">
   <h2>{{ game.title }}</h2>
-  <p class="date">Released: {{game.releaseDate}}</p>
-  <p class="description">{{game.description}}</p>
-  <a class="itch" *ngIf="game.itchUrl" href="{{game.itchUrl}}">Play on itch.io</a>
-  <a class="steam" *ngIf="game.steamUrl" href="{{game.steamUrl}}">Play on steam</a>
+  <p class="date">Released: {{ game.releaseDate }}</p>
+  <p class="description">{{ game.description }}</p>
+  <iframe
+    *ngIf="game.published"
+    frameborder="0"
+    [src]="game.itchEmbedUrl | safe"
+    width="552"
+    height="167"
+    ><a href="{{ game.itchUrl }}">{{ game.title }}</a></iframe
+  >
 </div>

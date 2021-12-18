@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { gameData } from 'src/assets/data/games';
+import { SafeurlPipe } from '../safeurl.pipe';
 
 import { GamesComponent } from './games.component';
 
@@ -10,7 +11,7 @@ describe('GamesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [GamesComponent],
+      declarations: [GamesComponent, SafeurlPipe],
     }).compileComponents();
     fixture = TestBed.createComponent(GamesComponent);
     component = fixture.componentInstance;
