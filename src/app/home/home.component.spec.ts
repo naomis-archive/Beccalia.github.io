@@ -29,7 +29,7 @@ describe('HomeComponent', () => {
       `Becca Lyria and Rosalia Nightsong are a pair of adventurers, travelling to various lands to pursue their own goals. As a couple, they are commonly referred to as "Beccalia", and while the love between them is strong and they get along quite well, their drastic differences often make for some interesting situations.`
     );
     expect(texts[1].innerText.trim()).toBe(
-      'You can learn about their stories and play through their adventures by checking out the Games tab above. Or join our chat server to stay in the loop on the latest updates!'
+      'You can learn about their stories and play through their adventures by checking out the Games tab above. Or join our chat server and follow our twitter to stay in the loop on the latest updates!'
     );
   });
 });
