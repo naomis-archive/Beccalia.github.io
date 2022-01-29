@@ -48,4 +48,10 @@ export const artList: ArtInt[] = [
     artist: 'Starfazers',
     artistUrl: 'https://starfazers.art/',
   },
+  {
+    fileName: 'beach.png',
+    artName: 'A Day at the Beach',
+    artist: 'Devonxy1',
+    artistUrl: 'https://twitter.com/Devonxy1',
+  },
 ];
