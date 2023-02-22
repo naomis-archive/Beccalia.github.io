@@ -10,7 +10,7 @@ main {
 
 body::before {
   content: "";
-  background: url(./assets/Moonlight.png);
+  background: url(https://cdn.nhcarrigan.com/banners/beccalia.png);
   background-size: cover;
   background-position: center top;
   opacity: 0.9;
