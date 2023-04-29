@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 export interface GameInt {
   title: string;
   releaseDate: string;
@@ -15,7 +14,8 @@ export const gameData: GameInt[] = [
     description:
       'A short adventure, the Prologue introduces you to the main characters and allows you to get a feel for who they are and how they interact. This is a great place to start if you are interested in getting in to the series.',
     itchUrl: 'https://nhcarrigan.itch.io/prologue',
-    itchEmbedUrl: 'https://itch.io/embed/1267076?linkback=true&bg_color=e2cff6&fg_color=222222&link_color=ed4eff&border_color=68417c',
+    itchEmbedUrl:
+      'https://itch.io/embed/1267076?linkback=true&bg_color=e2cff6&fg_color=222222&link_color=ed4eff&border_color=68417c',
     published: true,
   },
   {
