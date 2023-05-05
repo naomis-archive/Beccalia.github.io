@@ -1,8 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { gameData } from 'src/assets/data/games';
-import { SafeurlPipe } from '../safeurl.pipe';
+import { gameData } from 'src/data/games';
 
 import { GamesComponent } from './games.component';
+import { SafeurlPipe } from '../safeurl.pipe';
 
 describe('GamesComponent', () => {
   let component: GamesComponent;

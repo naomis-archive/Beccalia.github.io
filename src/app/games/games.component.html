@@ -1,14 +1,18 @@
-<h1>Games!</h1>
-<div *ngFor="let game of gameList">
-  <h2>{{ game.title }}</h2>
-  <p class="date">Released: {{ game.releaseDate }}</p>
-  <p class="description">{{ game.description }}</p>
-  <iframe
-    *ngIf="game.published"
-    frameborder="0"
-    [src]="game.itchEmbedUrl | safe"
-    width="552"
-    height="167"
-    ><a href="{{ game.itchUrl }}">{{ game.title }}</a></iframe
-  >
+<div class="content">
+  <div class="nes-container with-title is-centered is-rounded">
+    <h1 class="title">Games!</h1>
+    <div *ngFor="let game of gameList">
+      <h2>{{ game.title }}</h2>
+      <p class="date">Released: {{ game.releaseDate }}</p>
+      <p class="description">{{ game.description }}</p>
+      <iframe
+        *ngIf="game.published"
+        frameborder="0"
+        [src]="game.itchEmbedUrl | safe"
+        width="552"
+        height="167"
+        ><a href="{{ game.itchUrl }}">{{ game.title }}</a></iframe
+      >
+    </div>
+  </div>
 </div>

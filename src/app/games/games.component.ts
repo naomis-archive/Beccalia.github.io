@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { gameData, GameInt } from 'src/assets/data/games';
+import { gameData } from 'src/data/games';
+import { Game } from 'src/interfaces/Game';
 
 @Component({
   selector: 'app-games',
@@ -7,7 +8,7 @@ import { gameData, GameInt } from 'src/assets/data/games';
   styleUrls: ['./games.component.css'],
 })
 export class GamesComponent implements OnInit {
-  public gameList: GameInt[] = [];
+  public gameList: Game[] = [];
   constructor() {}
 
   ngOnInit(): void {
