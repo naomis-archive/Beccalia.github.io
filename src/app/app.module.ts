@@ -4,28 +4,23 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { GamesComponent } from './games/games.component';
 import { Router } from '@angular/router';
-import { FooterComponent } from './footer/footer.component';
+import { BeccaliaComponent } from './beccalia/beccalia.component';
 import { SafeurlPipe } from './safeurl.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
     HomeComponent,
     GalleryComponent,
     GamesComponent,
-    FooterComponent,
-    SafeurlPipe
+    BeccaliaComponent,
+    SafeurlPipe,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [
     {
       provide: ErrorHandler,
@@ -44,6 +39,6 @@ import { SafeurlPipe } from './safeurl.pipe';
       multi: true,
     },
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
