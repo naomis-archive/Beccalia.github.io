@@ -10,6 +10,7 @@ import { GamesComponent } from './games/games.component';
 import { Router } from '@angular/router';
 import { BeccaliaComponent } from './beccalia/beccalia.component';
 import { SafeurlPipe } from './safeurl.pipe';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { SafeurlPipe } from './safeurl.pipe';
     BeccaliaComponent,
     SafeurlPipe,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [
     {
       provide: ErrorHandler,
