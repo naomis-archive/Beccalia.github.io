@@ -74,7 +74,7 @@
     </p>
   </div>
   <div
-    *ngIf="view === 'pose'"
+    *ngIf="view === 'pose' && poses.length"
     class="nes-container is-rounded is-centered image"
   >
     <h2 class="title">{{ poses[currentPoseIndex].name }}</h2>
@@ -105,7 +105,7 @@
     </select>
   </div>
   <button
-    *ngIf="view !== 'portrait'"
+    *ngIf="view !== 'portrait' && portraits.length"
     class="nes-btn"
     (click)="changeView('portrait')"
   >
