@@ -129,10 +129,11 @@
       }
     }
   },
-  "defaultProject": "profile",
   "cli": {
-    "defaultCollection": "@angular-eslint/schematics",
-    "analytics": "5ac04892-1114-4ba1-a068-0d6bc3f13c6d"
+    "analytics": "5ac04892-1114-4ba1-a068-0d6bc3f13c6d",
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   },
   "schematics": {
     "@angular-eslint/schematics:application": {
